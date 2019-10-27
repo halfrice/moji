@@ -1,5 +1,6 @@
 import { createGlobalStyle } from "styled-components"
 import theme from "./theme.yaml"
+import device from "./device"
 
 const { colors, font, fontSize } = theme
 
@@ -24,6 +25,7 @@ const GlobalStyles = createGlobalStyle`
     color: ${colors.light};
     font-family: ${font.openSans};
     font-size: ${fontSize.md};
+    ${device.tablet`font-size: ${fontSize.sm};`};
     font-weight: 400;
     overflow-x: hidden;
     -moz-osx-font-smoothing: grayscale;
