@@ -4,17 +4,16 @@ import styled from "styled-components"
 import GlobalStyles from "../styles/global"
 import Seo from "./seo"
 
-const Root = styled.div`
-  min-height: 100vh;
-`
+import "typeface-open-sans"
+import "typeface-source-sans-pro"
 
 const Layout = ({ children }) => {
   return (
-    <Root id="root">
+    <div id="root">
       <Seo />
       <GlobalStyles />
       <div>{children}</div>
-    </Root>
+    </div>
   )
 }
 
