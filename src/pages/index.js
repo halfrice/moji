@@ -1,9 +1,17 @@
 import React from "react"
+import styled from "styled-components"
 import Layout from "../components/layout"
+import Canvas from "../components/canvas"
+
+const MainContainer = styled.div`
+  margin: 0 auto;
+  width: 100%;
+`
 
 export default () => (
   <Layout>
-    <h1>Moji App</h1>
-    <div>test messaging app</div>
+    <MainContainer>
+      <Canvas />
+    </MainContainer>
   </Layout>
 )

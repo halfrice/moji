@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import styled from "styled-components"
 import GlobalStyles from "../styles/global"
 import Seo from "./seo"
+import Canvas from "../components/canvas"
 
 import "typeface-open-sans"
 import "typeface-source-sans-pro"
