@@ -1,6 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
+import GlobalStyles from "../styles/global"
 import Seo from "./seo"
 
 const Root = styled.div`
@@ -11,6 +12,7 @@ const Layout = ({ children }) => {
   return (
     <Root id="root">
       <Seo />
+      <GlobalStyles />
       <div>{children}</div>
     </Root>
   )
