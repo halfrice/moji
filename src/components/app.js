@@ -3,11 +3,10 @@ import styled from "styled-components"
 import "emoji-mart/css/emoji-mart.css"
 import data from "emoji-mart/data/messenger.json"
 import { NimblePicker, Emoji } from "emoji-mart"
+import mixins from "../styles/mixins"
 
 const AppContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  ${mixins.flex.center};
   flex-direction: column;
   max-width: 1440px;
   padding: 20px;

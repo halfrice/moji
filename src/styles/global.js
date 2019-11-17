@@ -32,13 +32,6 @@ const GlobalStyles = createGlobalStyle`
     -webkit-font-smoothing: antialiased;
   }
   
-  #root {
-    min-height: 100vh;
-    display: grid;
-    grid-template-rows: 1fr auto;
-    grid-template-columns: 100%;
-  }
-
   h1,
   h2,
   h3,
@@ -47,6 +40,43 @@ const GlobalStyles = createGlobalStyle`
     color: ${colors.darkPink};
     font-weight: 600;
   }
+
+  a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+    transition: ${theme.transition};
+    cursor: pointer;
+    &:hover {
+      color: ${colors.darkSlate};
+      outline: 0;
+    }
+  }
+
+  p {
+    margin: 0 0 15px 0;
+  }
+
+  ul, ol {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  svg {
+    width: 100%;
+    height: 100%;
+    vertical-align: middle;
+  }
+
+  #root {
+    min-height: 100vh;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    grid-template-columns: 100%;
+  }
+
 `
 
 export default GlobalStyles
