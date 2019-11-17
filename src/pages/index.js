@@ -1,8 +1,6 @@
 import React from "react"
 import styled from "styled-components"
-import Layout from "../components/layout"
-import Canvas from "../components/canvas"
-import App from "../components/app"
+import { App, Canvas, Layout } from "~components"
 
 const MainContainer = styled.div`
   margin: 0 auto;

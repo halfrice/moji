@@ -1,11 +1,10 @@
 import React from "react"
 import styled from "styled-components"
+import { mixins } from "~styles"
 
 const CanvasContainer = styled.div`
-  display: flex;
+  ${mixins.flex.center};
   flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
 `
 
 const Canvas = () => {

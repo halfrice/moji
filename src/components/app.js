@@ -3,7 +3,7 @@ import styled from "styled-components"
 import "emoji-mart/css/emoji-mart.css"
 import data from "emoji-mart/data/messenger.json"
 import { NimblePicker, Emoji } from "emoji-mart"
-import mixins from "../styles/mixins"
+import { device, mixins } from "~styles"
 
 const AppContainer = styled.div`
   ${mixins.flex.center};
